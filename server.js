@@ -32,7 +32,7 @@ httpServer.listen(PORT, () => {
 });
 
 /*
-  Prisa
+    Prisa
     - npm i prisma
     - npm i @prisma/client
 
