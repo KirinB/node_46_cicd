@@ -6,16 +6,16 @@ on:
 
 jobs:
   build:
-    runs-on: ubutu-latest
+    runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v4
 
-      - name: Đăng nhập vào docker hub
+      - name: Đăng Nhập Vào Docker Hub
         run: docker login -u kirin97 -p ${{secrets.PASS_DOCKER}}
 
-      - name: Build image mới
+      - name: Build Image Mới
         run: docker build -t kirin97/image-be_cyber_media:latest .
 
-      - name: Push Image lên docker hub
+      - name: Push Image Lên Docker Hub
         run: docker push kirin97/image-be_cyber_media:latest
